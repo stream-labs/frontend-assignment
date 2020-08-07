@@ -14,7 +14,7 @@ Your mission, should you choose to accept it, is to familiarize yourself with th
 
 - You should render 2 images in the top left of the canvas. You may choose any images you wish, and they can be hardcoded. Allowing the user to select images is not part of this assignment. Both of these images should be rendered on the same canvas. You can choose appropriate dimensions of the images but they should maintain proper aspect ratios of the original image sources.
 
-- You should be able to **drag each image** around the canvas with your mouse cursor. An image cannot be dragged into a position where it is partially outside the canvas.
+- You should be able to **drag each image** individually around the canvas with your mouse cursor. An image cannot be dragged into a position where it is partially outside the canvas.
 
 - When the image is being dragged, add a green border of 2 pixels width around the dragged image.
 
