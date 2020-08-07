@@ -4,7 +4,7 @@ Hi there! We are happy you are interested in joining the frontend engineering te
 
 We work fast, fail fast, and iterate fast to keep up with the fast pace of this industry, and we are looking for a talented frontend engineer to join this process with us. You will work on range of different products visible to hundreds of thousands of daily users, solve interesting non-conventional technical challenges, and grow to become full product owner along the way.
 
-We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out **maximum 4 hours** for this assignment. For that, we want you to build a basic skeleton of the editor in our popular live streaming software - [Streamlabs OBS](https://streamlabs.com/streamlabs-obs).
+We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out **approximately 4 hours** for this assignment. For that, we want you to build a basic skeleton of the editor in our popular live streaming software - [Streamlabs OBS](https://streamlabs.com/streamlabs-obs).
 
 ## Your mission
 
