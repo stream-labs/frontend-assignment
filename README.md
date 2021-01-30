@@ -8,7 +8,7 @@ We believe it is important that our assessment of your skills matches the techni
 
 ## Your mission
 
-Your mission, shoudl you choose to accept it, is to familiarize yourself with the browser canvas API and build a canvas with 2 draggable elements.
+Your mission, should you choose to accept it, is to familiarize yourself with the browser canvas API and build a canvas with 2 draggable elements.
 
 - The canvas should be 100% width with a 16:9 aspect ratio. The canvas should be responsive to browser window resizing.
 
