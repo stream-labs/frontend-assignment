@@ -4,11 +4,11 @@ Hi there! We are happy you are interested in joining the frontend engineering te
 
 We work fast, fail fast, and iterate fast to keep up with the fast pace of this industry, and we are looking for a talented frontend engineer to join this process with us. You will work on range of different products visible to hundreds of thousands of daily users, solve interesting non-conventional technical challenges, and grow to become full product owner along the way.
 
-We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out **approximately 4 hours** for this assignment. For that, we want you to build a basic skeleton of the editor in our popular live streaming software - [Streamlabs OBS](https://streamlabs.com/streamlabs-obs).
+We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out **approximately 2-3 hours** for this assignment. For that, we want you to build a basic skeleton of the editor in our popular live streaming software - [Streamlabs OBS](https://streamlabs.com/streamlabs-obs).
 
 ## Your mission
 
-Your mission, should you choose to accept it, is to familiarize yourself with the browser canvas API and create an HTML page with a single canvas element.
+Your mission, should you choose to accept it, is to familiarize yourself with the browser canvas API and build a canvas with 2 draggable elements.
 
 - The canvas should be 100% width with a 16:9 aspect ratio. The canvas should be responsive to browser window resizing.
 
@@ -23,6 +23,10 @@ Your mission, should you choose to accept it, is to familiarize yourself with th
 - JavaScript and TypeScript are both acceptable for this assignment, and you should choose whichever one you would prefer.
 
 - While we love automated tests at Streamlabs, you are not required or encouraged to include them as part of your solution. If it helps you to write tests, you are welcome to include them, but we will not be judging them as part of your submission.
+
+```
+💡 We have provided a template to get started and minimize time to set it up. If you prefer to start from scratch, you are welcome to do that as well.
+```
 
 ## What we are looking for
 
