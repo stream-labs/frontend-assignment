@@ -25,12 +25,14 @@ Your mission, should you choose to accept it, is to familiarize yourself with th
 - While we love automated tests at Streamlabs, you are not required or encouraged to include them as part of your solution. If it helps you to write tests, you are welcome to include them, but we will not be judging them as part of your submission.
 
 ```
-💡 We have provided a template to get started and minimize time to set it up. If you prefer to start from scratch, you are welcome to do that as well.
+💡 We have provided a template to get started and minimize time to set it up. If you prefer to start from scratch, you are welcome to do that as well. You may choose a framework of your choice and state your reasoning for that decision.
+
+The 2-3 hours time requirement is not a hard stop, and was determined with an assumption of previous basic knowledge of core concepts utilized. It is in your best interest to finish the tasks in the mission for us to assess your ability.
 ```
 
 ## What we are looking for
 
-While the hard requirements of this assignment are somewhat basic, we are looking for assignments that display deep understanding of JavaScript and an ability to write clean, scalable, and well commented code. The infrastructure should be easily able to handle future feature requirements such as:
+While the hard requirements of this assignment are somewhat basic, we are looking for assignments that display deep understanding of JavaScript and an ability to write clean, scalable, and well commented code. The infrastructure should be easily able to potentially handle future feature requirements such as the following:
 
 - persisting state on refresh
 - ability to add/remove images from file input and/or src
@@ -38,6 +40,10 @@ While the hard requirements of this assignment are somewhat basic, we are lookin
 - instead of drawing static images, drawing custom object (like our alerts)
 - resizing and cropping objects
 - undo/redo
+
+```
+NOTE: You do not need to build these features
+```
 
 ## Documentation & Thought Process
 
@@ -63,6 +69,8 @@ While the hard requirements of this assignment are somewhat basic, we are lookin
 
 
 - Do you feel like this assignment has an appropriate level of difficulty?
+
+- Briefly explain your decisions to use tools, frameworks and libraries like React, Vue, etc.
 ```
 
 ## Questions
