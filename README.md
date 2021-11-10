@@ -2,48 +2,58 @@
 
 Hi there! We are happy you are interested in joining the frontend engineering team here at Streamlabs. We are on a mission of building tools to help content creators around the world grow, and we are excited to have you on board.
 
-We work fast, fail fast, and iterate fast to keep up with the fast pace of this industry, and we are looking for a talented frontend engineer to join this process with us. You will work on range of different products visible to hundreds of thousands of daily users, solve interesting non-conventional technical challenges, and grow to become full product owner along the way.
+We work fast, fail fast, and iterate fast to keep up with the fast pace of this industry, and we are looking for a talented front-end engineer to join this process with us. You will work on a range of different products visible to hundreds of thousands of daily users, solve interesting non-conventional technical challenges, and grow to become a full product owner along the way.
 
-We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out **approximately 2-3 hours** for this assignment. For that, we want you to build a basic skeleton of the editor in our popular live streaming software - [Streamlabs OBS](https://streamlabs.com/streamlabs-obs).
+We believe it is important that our assessment of your skills matches the technical challenges you will face as an engineer at the company. Please carve out approximately 3-4 hours for this assignment. For that, we want you to build a basic skeleton of our new web-based live-streaming studio - [Melon](https://melonapp.com).
 
 ## Your mission
 
-Your mission, should you choose to accept it, is to familiarize yourself with the browser canvas API and build a canvas with 2 draggable elements.
+Your mission, should you choose to accept it, is to familiarize yourself with the browser media stream API and build a basic interface of a web-based live-streaming studio following [this Figma wireframe](https://www.figma.com/file/U7xUVvkKNfOqQbjsNYHZsy/Streamlabs-Take-Home-Assignment-Mockups?node-id=2%3A811).
 
-- The canvas should be 100% width with a 16:9 aspect ratio. The canvas should be responsive to browser window resizing.
-
-- You should render 2 images in the top left of the canvas. You may choose any images you wish, and they can be hardcoded. Allowing the user to select images is not part of this assignment. Both of these images should be rendered on the same canvas. You can choose appropriate dimensions of the images but they should maintain proper aspect ratios of the original image sources.
-
-- You should be able to **drag each image** individually around the canvas with your mouse cursor. An image cannot be dragged into a position where it is partially outside the canvas.
-
-- When the image is being dragged, add a green border of 2 pixels width around the dragged image.
-
-- While you are welcome to use 3rd party libraries, please do not use any libraries that fully implement the rendering/dragging behavior (i.e. Fabric.js). We will be further customizing this behavior in the future, and we need the flexibility that the low-level canvas API provides.
-
+- The stream should be a 16 x 9 aspect ratio and be responsive to the window size. Both layouts are available on Figma. The stream should be fully visible at all screen sizes.
+- Users can import up to 2 media sources to the studio. These sources can be a screen share or a video feed (using your laptop or external webcam). If you do not have a webcam, you can use a “virtual” webcam such as [Streamlabs OBS virtual camera](https://blog.streamlabs.com/streamlabs-obs-now-supports-virtual-camera-9a4e464435c2).
+- Users can add/remove media sources to the stream. The layout should auto-adjust to render the new number of media sources on stream. More information on this is below.
+- The layout of the media streams will vary depending on the number of media feed sources. For a specific number of sources, users can toggle different layouts as well.
+- The "Go Live", "Record" and "Chat" buttons are just placeholders. Your application **should not** include any functionality for streaming, recording, or chatting.
 - JavaScript and TypeScript are both acceptable for this assignment, and you should choose whichever one you would prefer.
-
 - While we love automated tests at Streamlabs, you are not required or encouraged to include them as part of your solution. If it helps you to write tests, you are welcome to include them, but we will not be judging them as part of your submission.
 
-```
-💡 We have provided a template to get started and minimize time to set it up. If you prefer to start from scratch, you are welcome to do that as well. You may choose a framework of your choice and state your reasoning for that decision.
+### Add/remove media sources to/from the stream
 
-The 2-3 hours time requirement is not a hard stop, and was determined with an assumption of previous basic knowledge of core concepts utilized. It is in your best interest to finish the tasks in the mission for us to assess your ability.
-```
+Users can add and remove media sources to the stream. When a media source is added, it is rendered on stream with the coordinates, and dimensions determined by the stream layout. The percentages below are relative to the stream player size in Figma.
+
+When only the webcam source is added, there are 3 layouts - 100%, 80%, and 60% width & height.
+
+When only the screen share source is added, there is 1 layout, 100% width & height.
+
+When both the webcam and screen share sources are added, there are 3 layouts:
+1. Screen share is 100% width & height and the webcam source is floating bottom right
+2. Screen share is 100% width & height and the webcam source is floating bottom left
+3. Screen share is 66% width and 80% height. The webcam source is 33% width and 80% height
+
+For each combination of added sources, only the valid layout options are presented. For example, when the user has webcam source selected, they will see 3 layout options. When the user removed this webcam source and then selects a screen share source, they will see just one layout option.
+
+
+## Note on the time duration
+
+The 3-4 hours time requirement is not a hard stop and was determined with an assumption of previous basic knowledge of core concepts utilized. It is in your best interest to finish the tasks in the mission for us to assess your ability.
 
 ## What we are looking for
 
-While the hard requirements of this assignment are somewhat basic, we are looking for assignments that display deep understanding of JavaScript and an ability to write clean, scalable, and well commented code. The infrastructure should be easily able to potentially handle future feature requirements such as the following:
+This assignment is a good reflection of your day-to-day at Streamlabs. We are looking for assignments that demonstrate a deep understanding of JavaScript and an ability to write clean, scalable, and well-commented code. The infrastructure should be easily able to potentially handle future feature requirements such as the following:
 
-- persisting state on refresh
-- ability to add/remove images from file input and/or src
-- reordering the z positions of each layers
-- instead of drawing static images, drawing custom object (like our alerts)
-- resizing and cropping objects
-- undo/redo
+- Mute/Unmute video
+- Keyboard shortcut bindings
+- Different media source types such as pre-recorded video or audio
+- Adding other elements on the stream beside the media sources, such as logo, banner text, and ticker
+- Customizing stream background with images or solid colors
 
-```
-NOTE: You do not need to build these features
-```
+**NOTE:** You do not need to build these features today. Just keep in mind that you are building a strong foundation for this app to evolve into a complex feature-complete product in the future.
+
+From a product standpoint, we are looking for candidates who value building a beautiful product as much as a functional one. This means clean CSS following the best modern standards and attention to detail to the interface and user experience.
+
+We have intentionally created some room for creativity around the UI. Once you have completed the core assignment requirements, you can use the remaining time to add some personal touches. Please do not spend more than 1 hour on this.
+
 
 ## Documentation & Thought Process
 
@@ -58,19 +68,17 @@ NOTE: You do not need to build these features
 ```
 - How long did it take you to complete this assignment?
 
-
 - What about this assignment did you find most challenging?
-
 
 - What about this assignment did you find unclear?
 
-
 - What challenges did you face that you did not expect?
-
 
 - Do you feel like this assignment has an appropriate level of difficulty?
 
 - Briefly explain your decisions to use tools, frameworks and libraries like React, Vue, etc.
+
+- Did you make certain assumptions and decisions around the UI/UX? Please elaborate on your reasonings.
 ```
 
 ## Questions
