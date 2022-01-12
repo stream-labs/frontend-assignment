@@ -35,7 +35,7 @@ When both the webcam and screen share images are added, there are 3 layouts:
 
 For each combination of added images, only the valid layout options are presented. For example, when the user has webcam source selected, they will see 3 layout options. When the user removed this webcam source and then selects a screen share source, they will see just one layout option.
 
-The images should never be cut off and maintain its original aspect ratio.
+The images should never be cut off height-wise and maintain its original aspect ratio.
 
 
 ## Note on the time duration
