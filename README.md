@@ -10,7 +10,7 @@ We believe it is important that our assessment of your skills matches the techni
 
 Your mission, should you choose to accept it, is to familiarize yourself with the browser media stream API and build a basic interface of a web-based live-streaming studio following [this Figma wireframe](https://www.figma.com/file/U7xUVvkKNfOqQbjsNYHZsy/Streamlabs-Take-Home-Assignment-Mockups?node-id=2%3A811).
 
-- The stream should be a 16 x 9 aspect ratio and be responsive to the window size. Both layouts are available on Figma. The stream should be fully visible at all screen sizes.
+- The stream should be a 16 x 9 aspect ratio and be responsive to the window size. The stream should be fully visible at all screen sizes.
 - You can use basic HTML elements to render the stream. You do not need to use the `<canvas/>` HTML element to render.
 - Users can add up to 2 images to the studio. One image will represent **a video webcam feed** while another image will represent **a screenshare feed**
 - Users can add/remove both images to the stream. The layout should auto-adjust to render the new number of images on stream. More information on this is below.
@@ -29,11 +29,13 @@ When only the "webcam" image is added, there are 3 layouts - 100%, 80%, and 60% 
 When only the "screen share" image is added, there is 1 layout, 100% width & height.
 
 When both the webcam and screen share images are added, there are 3 layouts:
-1. Screen share is 100% width & height and the webcam source is floating bottom right
-2. Screen share is 100% width & height and the webcam source is floating bottom left
+1. Screen share is 100% width & height and the webcam source is floating bottom right (height of 20%, aspect ratio 16:9)
+2. Screen share is 100% width & height and the webcam source is floating bottom left (height of 20%, aspect ratio 16:9)
 3. Screen share is 66% width and 80% height. The webcam source is 33% width and 80% height
 
 For each combination of added images, only the valid layout options are presented. For example, when the user has webcam source selected, they will see 3 layout options. When the user removed this webcam source and then selects a screen share source, they will see just one layout option.
+
+The images should never be cut off and maintain its original aspect ratio.
 
 
 ## Note on the time duration
@@ -45,6 +47,7 @@ The 3-4 hours time requirement is not a hard stop and was determined with an ass
 This assignment is a good reflection of your day-to-day at Streamlabs. We are looking for assignments that demonstrate a deep understanding of JavaScript and an ability to write clean, scalable, and well-commented code. The infrastructure should be easily able to potentially handle future feature requirements such as the following:
 
 - Replacing static images with videos
+- Supporting addition of a 3rd, 4th ... 10th camera feed to the stream, for a group podcasts or virtual acapella performance
 - Keyboard shortcut bindings
 - Different media source types such as pre-recorded video or audio
 - Adding other elements on the stream beside the media sources, such as logo, banner text, and ticker
