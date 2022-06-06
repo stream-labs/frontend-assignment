@@ -8,7 +8,7 @@ We believe it is important that our assessment of your skills matches the techni
 
 ## Your mission
 
-Your mission, should you choose to accept it, is to familiarize yourself with the browser media stream API and build a basic interface of a web-based live-streaming studio following [this Figma wireframe](https://www.figma.com/file/U7xUVvkKNfOqQbjsNYHZsy/Streamlabs-Take-Home-Assignment-Mockups?node-id=2%3A811).
+Your mission, should you choose to accept it, is to familiarize yourself with and build a basic interface of a web-based live-streaming studio following [this Figma wireframe](https://www.figma.com/file/U7xUVvkKNfOqQbjsNYHZsy/Streamlabs-Take-Home-Assignment-Mockups?node-id=2%3A811).
 
 - The stream should be a 16 x 9 aspect ratio and be responsive to the window size. The stream should be fully visible at all screen sizes.
 - You can use basic HTML elements to render the stream. You do not need to use the `<canvas/>` HTML element to render.
